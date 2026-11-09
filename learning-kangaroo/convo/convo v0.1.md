@@ -14,7 +14,7 @@
 
 ## Questions (answer inline)
 
-1. **Level.** Joey is counting and patterns within 10; Roo is about the contest's grades 1–2 level. Right pitch for each?
+1. **Level.** Joey is counting and patterns within 10; Roo is about the contest's first level. Right pitch for each?
    > 
 2. **Points.** Each page shows 3 / 4 / 5 points like the contest. Keep, or leave off for the younger one?
    > 

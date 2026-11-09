@@ -171,6 +171,7 @@ ${text(60, 62, NAME + " #" + code, { size: 22, font: "ui", weight: 700 })}${text
 ${text(60, 118, rc.title, { size: 46 })}${text(790, 112, lvl, { size: 22, anchor: "end", font: "ui" })}
 ${text(60, 156, rc.how, { size: 26, fill: "#333" })}
 ${body}
+${rc.about ? text(425, 1044, rc.about, { size: 15, anchor: "middle", font: "ui", fill: "#333", weight: 600 }) : ""}
 ${text(425, 1068, footer, { size: footer.length > 80 ? 17 : 19, anchor: "middle", font: "ui", fill: "#333" })}
 </svg>`;
     seen = keep;

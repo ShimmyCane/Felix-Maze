@@ -22,6 +22,8 @@ for (const rc of LTD_CATALOG) {
   if (rc.how && rc.how.length > 70) say("instruction too long for one line (" + rc.how.length + " characters)");
   if (!(rc.level >= 1 && rc.level <= 3)) say("level must be 1–3");
   if (!rc.inspired) say("missing inspired by");
+  if (!rc.about) say("missing the about line (who the idea comes from, one line)");
+  else if (rc.about.length > 100) say("about line too long for one printed line (" + rc.about.length + ")");
   let m;
   try { m = LTD.measured(rc); } catch (e) { say("does not draw: " + e.message); continue; }
   const { x0, y0, x1, y1 } = LTD.BOX;

@@ -4,7 +4,7 @@ Run this before a maze is published (moved into `data/catalog.js`), and once ove
 
 ## Content
 
-- **Historical artists only.** "Inspired by" names only artists who are no longer alive (policy: nothing in the bank should imitate the style of artists working today). A design for a living artist is marked `living: true` in `tools/designs_data*.js` and the generator never makes it.
+- **Properly attributed.** "Inspired by" names the artist or source, and the maze has a short blurb about them (a couple of years above Felix's reading level). Living artists are fine with attribution (clarified 2026-11-09); never traced or copied. Designs marked `living: true` are still held back by the generator until Jimmy decides which to bring back.
 
 - [ ] Characters are friendly and on the list in `characters.md`. No scary faces, blood, weapons, fire hurting anyone, or anything that eats another character.
 - [ ] No brands, logos, TV or book characters. "Inspired by" artists are named for their style; nothing is traced.

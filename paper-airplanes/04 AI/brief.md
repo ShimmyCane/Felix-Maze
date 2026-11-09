@@ -1,9 +1,12 @@
 # Paper Airplanes — brief (for Claude)
 
-**What it is:** fold-on-the-line paper airplane sheets, printed true to scale and two-sided; the printed lines are the folds. Classic planes first, plus a research folder on how planes fly. No database: flight tests are files in the repo. Folder `paper-airplanes/` inside Felix-Maze, self-contained.
+**What it is:** fold-on-the-line paper airplane sheets (Letter, 100%, two-sided). `js/fold.js` simulates the folds and prints each crease where it falls on the top layer at that step, on the front or the back. Folder `paper-airplanes/` inside Felix-Maze, self-contained.
 
-**State (2026-11-09, round 1):** schematic draft and 13 questions in `convo/convo v0.1.md`. Nothing built. Not linked from Index or the Felix Maze home yet (waiting on question 2).
+**State (2026-11-09, round 2):**
+- 7 planes in `data/planes.js`, all previews. `tools/check_planes.js` passes in verbose, short and minimal modes; fingerprints written. Some labels fall back to a shorter form where space is tight (the checker lists them).
+- Pages: home, plane, pack, research. ⚙️ settings as in `schematic.md`. Smoke-tested offline.
+- `pa_flights` SQL written; Jimmy pastes it. Approval stays in the data file.
 
-**Decisions so far:** no database; true to scale with a ruler check; every plane test-folded and flown before approval; traditional designs first.
+**Decisions:** origami notation (valley dashed, mountain dash-dot); back alignment by a window-read test sheet and an X/Y offset; decoration as a dropdown; approval by Claude from flight notes; simulator far later; canard on hold (needs a cut).
 
-**Open:** paper size (the request said 4½ × 11, probably 8½ × 11), dash-dot vs solid for mountain folds, front/back line placement, instructions on the sheet or beside it.
+**Not verified:** no real fold or flight yet. The geometry is checked by the engine, not by paper. The first real fold of each plane is the real test.

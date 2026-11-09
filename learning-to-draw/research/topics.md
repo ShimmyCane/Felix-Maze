@@ -1,6 +1,6 @@
 # Learning to Draw — research topics
 
-A running list of ideas worth reading about. Each topic says what it is, why it matters for the sheets, and what it changed (or might change). Historical sources only for art; copies of other people's pages go in `research/private/` (not committed).
+A running list of ideas worth reading about. Each topic says what it is, why it matters for the sheets, and what it changed (or might change). Every source is attributed; copies of other people's pages go in `research/private/` (not committed).
 
 | # | Topic | Why it matters | Status |
 |---|---|---|---|

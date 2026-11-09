@@ -1,81 +1,64 @@
-# Paper Airplanes — Schematic (round 1 draft)
+# Paper Airplanes — Schematic
 
-**Track:** A. Family play (simple, graphic, few words). The printed sheet is the product.
-**Status:** Draft. Nothing built. Waiting on answers in `convo/convo v0.1.md`.
-**Platform:** plain HTML/CSS/JS, no build, GitHub Pages (inside Felix-Maze, like Learning to Draw and Learning Kangaroo). **No database.**
-**Conversation:** `convo/convo v0.1.md`
+**Track:** A. Family play. The printed sheet is the product; the pages pick, print and record flights.
+**Status:** Round 2 — seven planes built as previews (none approved). Not folded or flown yet.
+**Platform:** plain HTML/CSS/JS, no build, GitHub Pages (inside Felix-Maze). Letter portrait, printed at 100%, two-sided.
+**Conversation:** `convo/convo v0.1.md` (answered), `convo/convo v0.2.md` (open)
 
 ## Purpose
 
-Teach Felix to fold a good plane by himself, with precision. The sheet is the paper you fold: the lines are printed exactly where the creases go, numbered in order, so following them step by step turns the sheet into the plane. Flying it is the reward; folding carefully is the lesson.
+Teach Felix to fold a good plane by himself, with precision, together with Jimmy. The sheet is the paper you fold: each crease is printed exactly where it falls, numbered in order, with an arrow and "in" or "out". Flying is the reward; careful folding is the lesson.
 
-## The idea in one picture
+## How the sheet is made (`js/fold.js`)
 
-```
- FRONT (printed side up)                     BACK
- ┌──────────────────────────┐               ┌──────────────────────────┐
- │ Paper Airplanes #PA-01   │               │ lines for the steps you  │
- │        ┊ 1 (in)          │               │ do after turning over    │
- │  ╲  2  ┊  2  ╱           │               │                          │
- │   ╲ ↷  ┊  ↶ ╱  dashed = in│              │  ─·─·─ = out (mountain)   │
- │    ╲   ┊   ╱             │               │                          │
- │     ╲  ┊  ╱  3 …         │               │                          │
- │ ruler: |----1 in----|    │               │ step pictures, tiny      │
- └──────────────────────────┘               └──────────────────────────┘
-```
+- The paper is a set of flat pieces. Each knows where it is on the flat sheet, how it has been moved (turned or flipped) in the folded model, and how high it lies in the stack.
+- A step folds the chosen layers on one side of a line onto the other side (valley: on top; mountain: behind), or turns the model over.
+- Before each fold the engine finds where the line crosses the **top visible layer**, maps that piece back to the flat sheet, and prints it on the side that is facing up then: the front, or the back (mirrored, as a two-sided print lands).
+- Labels (number, "in"/"out", a sentence in verbose mode) and arrows are drawn in the view at that step, so they read upright while folding. They avoid every fold line, each other, the title, the scale check and the about box.
+- The about box (name, origin, short story, "Pilot ____ Flight # __") goes on the outside of the plane, over the decoration.
 
-## The sheet (proposal, to confirm)
+## The sheet
 
-- US Letter 8.5 × 11 in, printed **at 100%**, two-sided. Drawing units 1/100 inch, same as the other sub-projects.
-- **Valley fold (fold toward you, "in")**: dashed line. **Mountain fold (fold away, "out")**: dash-dot line (the origami standard), so a solid line can stay for the paper's edge and cut lines. *(Your idea was solid = out; see question 3.)*
-- Every fold line has its **step number** at one end, a **curved arrow** showing which way the paper moves, and a small **"in" / "out"** label.
-- **Order:** step numbers 1, 2, 3 … Lines for steps done with the printed side up go on the front; after "turn it over", the next lines are on the back, lined up through the paper.
-- **Scale check:** a 1-inch (and 2-cm) ruler bar on each sheet. If it measures wrong, the print was scaled.
-- **Margins:** most home printers can't print the outer ~¼ inch. Lines stop short of the edge; folds are still lined up from corners and edges.
-- A small **step strip** (tiny pictures of the paper after each step) runs along one edge, so you can check you're on track.
-- Header "Paper Airplanes #PA-01 · The Dart", footer with the plane's name and where the design comes from.
+- Letter 8.5 × 11 in, 1/100 inch units; nothing within ¼ in of the edge (printers can't print there).
+- **Notation:** valley = dashed, mountain = dash-dot, crease-and-open = dashed with a double arrow, edge = solid. Filled arrowhead = toward you, hollow = away. Black circle = step number.
+- **Scale check:** a 2-inch ruler (with a 5-cm scale). Title "Paper Airplanes #PA-01 / Classic Dart".
+- **Decoration:** a light pattern on the outside side (bold, faint = 80% see-through, or none).
 
-## Planes to start (proposal: classics, traditional designs first)
+## Planes (all previews)
 
-| # | Plane | Why | Difficulty |
+| Code | Plane | Steps | Level |
 |---|---|---|---|
-| 1 | Classic Dart | The one everyone learns: fast and straight | ● |
-| 2 | Wide-wing Glider | Floats slowly; teaches big wings = more lift | ● |
-| 3 | Square Glider (flat-nose) | Very few folds; tough nose | ● |
-| 4 | Arrow / Bulldog Dart | Blunt nose, sturdier dart | ●● |
-| 5 | Nose-lock plane | A small flap locks the folds shut; good long glides | ●● |
-| 6 | Stunt / loop plane | Flaps bent up make it loop | ●● |
-| 7 | Hoop (ring-wing) glider | Not a plane shape at all, but it flies | ●● |
-| 8 | Canard | Small wing in front; teaches balance | ●●● |
+| PA-01 | Classic Dart | 10 | ● |
+| PA-02 | Wide-wing Glider | 9 | ● |
+| PA-03 | Square Glider | 8 | ● |
+| PA-04 | Bulldog Dart | 11 | ●● |
+| PA-05 | Nose-lock Plane | 12 | ●● |
+| PA-06 | Loop Plane (elevator flaps) | 12 | ●● |
+| PA-07 | Tube Glider | 5 | ●● |
 
-Named designs by people still living (for example the record-setting "Suzanne") are left out unless you say otherwise (question 7).
+The canard is on hold: a true canard needs a cut or a second piece of paper (convo v0.2).
 
-## Pages (proposal)
+## Pages
 
 | Page | What it does |
 |---|---|
-| `index.html` | The planes as cards (picture of the folded plane, difficulty, approved ✅ or not yet) |
-| `plane.html?code=PA-01` | Front and back of the fold sheet, 🖨️ Print (100%, two-sided), step-by-step pictures on screen, its flight record |
-| `pack.html` | Print several planes; a 🧪 alignment test sheet first (do the front and back line up on your printer?) |
-| `flights.html` | The test log: every fold-and-fly test, best distance, time in the air, notes, approve ✅ |
-| `research/` | How planes fly (lift, drag, weight, thrust; balance point; trim), in plain words with pictures |
+| `index.html` | Planes as cards (the finished model, preview or ✅ approved), notation key |
+| `plane.html?code=PA-01` | Front and back of the sheet, the steps as pictures, 🖨️ print (100%, two-sided), flights table; ⚙️ flight notes |
+| `pack.html` | Several planes, copies |
+| `research/index.html` | Reading a fold sheet, four forces, balance point, trim table, history |
 
-## Testing and approval (no database)
+## ⚙️ Settings (every page)
 
-- Each plane gets a test card: who folded it, how long it took, 3–5 throws (distance, time aloft, straight / curved / loop), notes, and a tweak to try.
-- Tests are typed on `flights.html`, saved on the device, then **downloaded as a file** and committed (`data/flights.js`). The repo is the record.
-- A plane is ✅ **approved** when it has been folded from the printed sheet and flies well at least 3 times, with no confusing step.
+Instructions (lots of words · number + in/out · numbers only) · outside decoration (dropdown) · printer flips on long / short edge · **back alignment** (🧪 test sheet; add the X/Y reading in mm; the backs are shifted to match) · planes to show (all previews · approved only) · database sign-in, sync, check · show errors. On a plane's page: flight notes (feet, seconds, how it flew, how easy to fold, notes).
 
-## Numbering
+## Back alignment
 
-`PA-<nn>`: 01, 02 … in the order they're added. Retire, don't delete: a replaced sheet keeps its number as `retired`.
+The test sheet has millimetre scales at the middle and four corners on the front, and thick crosses at the same spots on the back. Hold it to a window: where the back cross sits on the front scale is the shift (right = +X, down = +Y). Add the reading in ⚙️; the backs are moved by the opposite amount, and printing the test again should read 0, 0. Short-edge printers are handled by turning the back pages.
 
-## Later (only if wanted)
+## Data
 
-- A simple on-screen flight simulator: throw a plane, see the glide path, move the balance point. Research first; the folding sheets come first.
+Supabase **Family** project, app `paper-airplanes`, table `pa_flights` (flight, printed, flag). `supabase/001_flights.sql` + rolled-back test, **pasted by Jimmy**. Flights are kept on the device first and synced when signed in. Approval stays in `data/planes.js`, set by Claude.
 
-## Rules
+## Later
 
-- No database, no accounts.
-- True to scale: the ruler check must pass on paper before a plane is approved.
-- Felix's first name only.
+A simple glide simulator, far later, only if wanted. This is an in-person activity.

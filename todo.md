@@ -49,6 +49,8 @@ Each batch: generate → answer-line check first (failures to `data/rework.js`) 
 
 ## Next
 
+- [ ] Attribution blurbs on the maze sheets (one true line about each "inspired by" source), like Learning to Draw's `about` line. Decide with Jimmy which retired living-artist designs (Kusama) come back under the clarified rule.
+
 - [ ] Supabase: apply `001_felix_maze.sql` (mazes, doodles, characters) when baked doodle mazes should sync across devices; keep this device + `data/catalog.js` as fallbacks
 - [ ] Publish button in the library for doodle mazes (needs the database)
 - [ ] More styles from `inspirations.md` beyond the first 200

@@ -8,7 +8,7 @@ Purpose: printable mazes for Felix in many styles (art, nature, systems, music, 
 - AI notes: `04 AI/Felix Maze/brief.md` and `lessons.md`
 - Shared conventions: root `CLAUDE.md` (public repo, privacy) and `02 Refs/Skills/ipad_website.md`
 
-Sub-projects (self-contained, each can become its own repo; each has its own `CLAUDE.md`): `learning-to-draw/` (drawing worksheets) and `learning-kangaroo/` (Math Kangaroo-style worksheets). Their rules live in their folders; the maze checks don't touch them.
+Sub-projects (self-contained, each can become its own repo; each has its own `CLAUDE.md`): `learning-to-draw/` (drawing worksheets), `learning-kangaroo/` (Math Kangaroo-style worksheets) and `paper-airplanes/` (fold-on-the-line plane sheets). Their rules live in their folders; the maze checks don't touch them.
 
 Pages: `play.html` (🚗 drive a maze), `about.html` (theory, art, references, idea box), `prototypes.html` (10 digital-only 3D / moving ideas).
 
@@ -23,7 +23,7 @@ Project rules:
 - Make it a joy, not an exercise: white space around every maze, a story from start to goal, something to find on the way (`rubric.md`).
 - New characters go in `js/art.js` and `characters.md`. Run `qc.md` before publishing a maze.
 - Felix's first name only. No age, school or photos; scans of his drawings go in `private/`.
-- Art is "inspired by", never traced. Historical artists only (no one living): living-artist designs are marked `living: true` and never generated.
+- Art is "inspired by", never traced, and always **properly attributed**: name the artist or source and add a short blurb, written a couple of years above Felix's reading level, so he learns something while he plays. Living artists are fine with attribution (clarified by Jimmy, 2026-11-09). The `living: true` gate in `tools/generate.js` and `tools/plan.js` still stops those designs until Jimmy says which retired ones to bring back.
 - Research: update `research/index.html` (a new "What I was thinking" panel per round) alongside `maze_research.md`. Copies of others' papers or pages go in `research/private/` only.
 - A puzzle that fails the answer-line checks is never published: it goes to `data/rework.js`. Flagged puzzles are never picked (puzzle of the day, top five, packs, print all).
 - Retire, don't delete: a replaced puzzle gets `retired: true`; its counter is never reused. Counters 001–7FF are the bank; 800–FFF are doodle mazes made on a device.

@@ -12,7 +12,7 @@ Check: `node tools/check_sheets.js` (4 questions each, 5 different choices, the 
 
 Rules:
 - Letter portrait, black and white, two-sided. "Learning Kangaroo #LK-code" at the top of both pages. **No answers on the kids' pages**; the key is `answers.html`.
-- Our own questions only, in the contest's style. Never copy questions from real Math Kangaroo papers.
+- Our own questions only, in the contest's style. Never copy questions from real Math Kangaroo papers. Attribute the style: the home page says where the contest comes from.
 - Every question has `calc` (the answer worked out) so the checker can prove the letter is right.
 - No names or ages of the kids; the tracks are Joey and Roo, the data says "younger" / "older". Characters are our own kangaroos Kip, Bo and Pip.
 - Retire, don't delete: a replaced question or worksheet gets `retired: true`; ids are never reused.

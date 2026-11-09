@@ -12,6 +12,6 @@
 - Codes `LD-<A–J><1–5>`; retire, don't delete.
 - Children are "younger" / "older" in the data, never names or ages (public repo).
 - Shared `js/app.js` is a copy in each sub-project (no cross-folder imports), so each folder can leave on its own.
-- Inspired-by footers: historical artists and teachers only. (Gee's Bend was removed from I5: some quiltmakers are living.)
+- Inspired-by footers plus a one-line `about` on every sheet. Rule clarified 2026-11-09: attribution, not whether the artist is living. (Gee's Bend could come back to I5 now, with attribution.)
 
 **Open questions:** `convo/convo v0.1.md`.

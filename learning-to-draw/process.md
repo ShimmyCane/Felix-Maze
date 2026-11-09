@@ -4,7 +4,7 @@ Three steps, borrowed from Felix Maze: **generate → review → print in bulk**
 
 ## 1. Generate
 
-1. Pick the kind (A–J) and the next type number. Write the recipe in `data/catalog.js`: `cat`, `type`, `level` (1–3), `title`, `how` (one line, at most 70 characters), `inspired` (historical artist or teacher only).
+1. Pick the kind (A–J) and the next type number. Write the recipe in `data/catalog.js`: `cat`, `type`, `level` (1–3), `title`, `how` (one line, at most 70 characters), `inspired` (the artist, teacher or source) and `about` (one true line about them, under 100 characters).
 2. If the kind needs new art, add it in `js/sheets.js` (a new step drawing in `STEPS`, a new dot picture in `DOTS`, a new mirror half in `MIRROR`, a new grid picture in `GRIDS`, a new letter in `L`).
 3. Run `node tools/check_sheets.js`. It must pass: draws, inside the margins, code on top, footer, tags balance, fingerprint unchanged for published sheets. A new sheet gets its fingerprint on `--update`.
 4. Look at it: open `sheet.html?code=…` and go through `qc.md`.

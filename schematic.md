@@ -106,6 +106,10 @@ Supabase **Family** project, app `felix-maze`, tables prefixed `fmz_`:
 - Art is "inspired by", never traced. Living artists are style references only. Felix the cat is our own striped kitten, not the cartoon (`characters.md`).
 - Every maze passes `qc.md` before it's published.
 
+## Sub-projects
+
+`learning-to-draw/` and `learning-kangaroo/` live in this repo for now, linked from the home page's More tiles. Each is self-contained (own css, js, data, tools, docs, `supabase/`), so it can be copied out to its own repo later.
+
 ## Planning files
 
 `inspirations.md` (100 maze types) · `maze_research.md` · `variations.md` · `todo.md` · `characters.md` · `catalog.md` · `qc.md` · `rubric.md`

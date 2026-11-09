@@ -8,6 +8,8 @@ Purpose: printable mazes for Felix in many styles (art, nature, systems, music, 
 - AI notes: `04 AI/Felix Maze/brief.md` and `lessons.md`
 - Shared conventions: root `CLAUDE.md` (public repo, privacy) and `02 Refs/Skills/ipad_website.md`
 
+Sub-projects (self-contained, each can become its own repo; each has its own `CLAUDE.md`): `learning-to-draw/` (drawing worksheets) and `learning-kangaroo/` (Math Kangaroo-style worksheets). Their rules live in their folders; the maze checks don't touch them.
+
 Pages: `play.html` (🚗 drive a maze), `about.html` (theory, art, references, idea box), `prototypes.html` (10 digital-only 3D / moving ideas).
 
 How to run: open `index.html` (works from the file or GitHub Pages; no server needed). Sheets: `sheet.html?code=810-001`.

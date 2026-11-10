@@ -19,7 +19,7 @@ Felix loves drawing his own free-flowing mazes. Felix Maze makes mazes for him i
 | `library.html` | Every maze as a card with a picture (drawn as it scrolls into view). Search, sort (number, joy, level, newest), tag groups: level, theme, how it was made, things in it. Flagged ones are marked 🚩. Built on the Detail Library's search + tags + cards idea |
 | `sheet.html?code=810-001` | One sheet, ready to print. ◀ ▶ through the bank. 🚩 Flag. ⚙️ shows a small answer key (JPEG, downloadable), Felix's faces, and scores; none of it prints |
 | `play.html` | 🚗 Drive a maze: drag a finger (or arrow keys) along the passages; a dot marks each square the cat has stood on (one color, green on reaching the finish). Dead ends and turn-arounds are kept. On a win the replay walks the drive at one even beat, and each dot appears as the cat reaches its square. ⋯ on phones opens the buttons; ⛶ Focus shows only the maze. 💡 hint, ↩ back, ⟲ start over, 🚩 flag. Rules live in `js/play.js` (Driver: steps only through open passages) |
-| `about.html` | About: theory of mazes, a live "dials" lab, levels and joy, the art and inspirations (historical artists only), ways to play, an idea box (saved on this device, copy to paste into a chat), references |
+| `about.html` | About: theory of mazes, a live "dials" lab, levels and joy, the art and inspirations (always attributed, with a short blurb), ways to play, an idea box (saved on this device, copy to paste into a chat), references |
 | `prototypes.html` | 🧪 Ten digital-only ideas (`js/proto.js`): tabletop, fly-through, globe, drum, donut, cube, shifting maze, spinning rings, tower, flood. Plain canvas with a small 3D projection; not part of the bank |
 | `answer.html` | Type a maze number; the right path draws itself and the start character walks it. 🐢 slow, ↻ again |
 | `print.html` | Published sheets that aren't flagged (or a list of codes), one per page |
@@ -103,12 +103,12 @@ Supabase **Family** project, app `felix-maze`, tables prefixed `fmz_`:
 ## Rules
 
 - Public repo: Felix's first name only. No age, school or photos. Scans of his drawings go in `private/` (not committed).
-- Art is "inspired by", never traced. Living artists are style references only. Felix the cat is our own striped kitten, not the cartoon (`characters.md`).
+- Art is "inspired by", never traced, always attributed with a short blurb (living artists are fine with attribution). Felix the cat is our own striped kitten, not the cartoon (`characters.md`).
 - Every maze passes `qc.md` before it's published.
 
 ## Sub-projects
 
-`learning-to-draw/` and `learning-kangaroo/` live in this repo for now, linked from the home page's More tiles. Each is self-contained (own css, js, data, tools, docs, `supabase/`), so it can be copied out to its own repo later.
+`learning-to-draw/`, `learning-kangaroo/` and `paper-airplanes/` live in this repo for now, linked from the home page's More tiles. Each is self-contained (own css, js, data, tools, docs, `supabase/`), so it can be copied out to its own repo later.
 
 ## Planning files
 

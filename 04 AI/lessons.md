@@ -50,3 +50,7 @@
 - Solution-first (`build: "path"`, waypoints, lure) is the generator to use for level 5 and up. Planner (`tools/plan.js`) plus `generate.js --plan` made all ten in about 13 s, with no rejects.
 - Jimmy asked to delete the old puzzles. The "retire, don't delete" rule was set aside for this one restart; the old bank stays in git history. Old flags were closed as `replaced`.
 - Open: which puzzle is the "old double five" (no title or recipe matched it). Level 3 was left out of this batch; the five levels are 2, 4, 5, 6, 7.
+
+## 2026-11-09 (attribution rule, all sub-projects)
+
+- Jimmy's art rule was about **attribution**, not about artists being historical. Every "inspired by" names its source and comes with a short blurb pitched a couple of years above Felix's reading level, so the activity teaches something. Living artists are fine with attribution. Applied to the maze docs, Learning to Draw (an `about` line on all 50 sheets), Learning Kangaroo (a note on the contest) and Paper Airplanes (an about box on each plane). The maze generator's `living: true` gate is unchanged until Jimmy says which retired designs to bring back.

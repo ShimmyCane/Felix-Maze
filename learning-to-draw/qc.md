@@ -8,5 +8,5 @@
 - [ ] Prints well in black and white: grey dashes visible but lighter than ink; no big black areas.
 - [ ] Two-sided safe: no heavy fill (or marked "print one-sided" in the process).
 - [ ] Nothing scary or unsuitable; no real person, logo or brand.
-- [ ] "Inspired by" names a historical artist or teacher (no one living).
+- [ ] "Inspired by" names the artist, teacher or source, and the `about` line tells something true about them in one line.
 - [ ] Level fits: 1 = lots of help, 2 = some, 3 = none.

@@ -16,6 +16,6 @@ Rules:
 - A sheet is a recipe in `data/catalog.js`; `js/sheets.js` draws it. Engine changes can change published sheets; the check must pass before committing.
 - Joy first: white space, a finished example, then less help each row (look → trace → dots → on your own).
 - First names only, no ages or schools; the children are "younger" and "older" in the data. Scans of drawings go in `private/` (ignored).
-- Art is "inspired by", historical artists and teachers only (no one living).
+- Art is "inspired by", never traced, and properly attributed: `inspired` names the source and `about` tells one line about them, a couple of years above the kids' reading level. Living artists are fine with attribution.
 - Retire, don't delete: a replaced sheet gets `retired: true`; its code is never reused.
 - Supabase: Family project, app `learning-to-draw`, table `ltd_reviews` (`supabase/001_reviews.sql`). Not applied yet: see `04 AI/brief.md`.

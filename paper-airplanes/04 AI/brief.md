@@ -10,3 +10,5 @@
 **Decisions:** origami notation (valley dashed, mountain dash-dot); back alignment by a window-read test sheet and an X/Y offset; decoration as a dropdown; approval by Claude from flight notes; simulator far later; canard on hold (needs a cut).
 
 **Not verified:** no real fold or flight yet. The geometry is checked by the engine, not by paper. The first real fold of each plane is the real test.
+
+**Database (verified 2026-11-10):** `pa_flights` is live in the Family project. Rolled-back test returned the expected RESULT. Jimmy then pasted `001_flights.sql`. Checked: columns match the migration, RLS on, no anon grants, registry row present, no unregistered `pa_*` objects, 0 rows.
